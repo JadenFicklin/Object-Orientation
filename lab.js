@@ -146,6 +146,16 @@ console.log(totalPopulation(people));
 */
 
 //Code Here
+let foods = {
+  carb: "bread",
+  fat: "avocado",
+  protein: "chicken",
+};
+function ingredients(obj) {
+  const { carb, fat, protein } = obj;
+  return [carb, fat, protein];
+}
+console.log(ingredients(foods));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
@@ -166,6 +176,10 @@ var user = {
 */
 
 //Code Here
+console.log(user);
+user.name = "Bryan G. Smith";
+user.email = "bryan.smith@devmounta.in";
+console.log(user);
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -173,6 +187,8 @@ var user = {
 */
 
 //Code Here
+delete user.age;
+console.log(user);
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
@@ -182,6 +198,15 @@ var user = {
 */
 
 //Code here
+class Cat {
+  constructor(name, age, color) {
+    this.name = name;
+    this.age = age;
+    this.color = color;
+  }
+}
+const jinx = new Cat("Jinx", "2", "White");
+console.log(jinx.name);
 
 //////////////////////////// PROBLEM 13 ////////////////////////////
 /*
