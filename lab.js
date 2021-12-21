@@ -19,7 +19,7 @@ let me = {
 
 //Code here
 let dog = {
-  name: "Buddy",
+  name: "loki",
   color: "white",
   age: 2,
   goodBoy: true,
@@ -44,12 +44,22 @@ console.log(dog["color"]);
 */
 
 //Code here
+let favoriteThings = {
+  band: "Passion Pit",
+  food: "Shrimp",
+  person: "Miranda",
+  book: "The Way of Kings",
+  movie: "Baby Driver",
+  holiday: "Christmas",
+};
 
 /*
   After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
+favoriteThings.car = "2020 Mid-engine Corvette";
+console.log(favoriteThings);
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
@@ -57,6 +67,9 @@ console.log(dog["color"]);
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
+console.log(favoriteThings);
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -74,6 +87,7 @@ var carDetails = {
 */
 
 //Code Here
+let { color, make, model, year } = carDetails;
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
@@ -82,14 +96,20 @@ var carDetails = {
   Use object destructuring to save the object properties to new variables. 
   The property names are firstName, lastName, and title.
 */
-
+let objectExample = {
+  title: "test",
+  firstName: "jacob",
+  lastName: "bush",
+};
 function greeting(obj) {
   //Code Here
+  const { title, firstName, lastName } = obj;
 
   // Do not edit the code below.
   return "Hello, " + title + " " + firstName + " " + lastName + "!";
   // Do not edit the code above.
 }
+console.log(greeting(objectExample));
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
@@ -102,6 +122,18 @@ function greeting(obj) {
 */
 
 //Code Here
+let people = {
+  utah: 3206000,
+  california: 39510000,
+  texas: 29000000,
+  arizona: 7279000,
+};
+
+function totalPopulation(obj) {
+  const { utah, california, texas, arizona } = obj;
+  return utah + california + texas + arizona;
+}
+console.log(totalPopulation(people));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
